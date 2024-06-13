@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crudoperation", "Crudoperation\Crudoperation.csproj", "{9502BFB4-12BD-463E-A63D-EBE7815850CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Crudoperation", "Crudoperation\Crudoperation.csproj", "{9502BFB4-12BD-463E-A63D-EBE7815850CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crudoperation.Shared", "Crudoperation.Shared\Crudoperation.Shared.csproj", "{8D80C462-1C8D-485D-885F-3C1F6E264B92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Crudoperation.Shared", "Crudoperation.Shared\Crudoperation.Shared.csproj", "{8D80C462-1C8D-485D-885F-3C1F6E264B92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crudoperation.Models", "Crudoperation.Models\Crudoperation.Models.csproj", "{8B313105-0B4C-47C0-9621-BCBA4F6BA88B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Crudoperation.Models", "Crudoperation.Models\Crudoperation.Models.csproj", "{8B313105-0B4C-47C0-9621-BCBA4F6BA88B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crudoperation.Services", "Crudoperation.Services\Crudoperation.Services.csproj", "{2B65D818-2D8B-4BDA-BD84-853130086454}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Crudoperation.Services", "Crudoperation.Services\Crudoperation.Services.csproj", "{2B65D818-2D8B-4BDA-BD84-853130086454}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crudoperation.Datas", "Crudoperation.Datas\Crudoperation.Datas.csproj", "{E9F6E735-1443-4A7F-BEA5-B1CCB4B3BA24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Crudoperation.Datas", "Crudoperation.Datas\Crudoperation.Datas.csproj", "{E9F6E735-1443-4A7F-BEA5-B1CCB4B3BA24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudoperationUnitTest", "CrudoperationUnitTest\CrudoperationUnitTest.csproj", "{C70B4021-B7CD-4A30-B2FE-F8CA6910B2ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{E9F6E735-1443-4A7F-BEA5-B1CCB4B3BA24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9F6E735-1443-4A7F-BEA5-B1CCB4B3BA24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9F6E735-1443-4A7F-BEA5-B1CCB4B3BA24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C70B4021-B7CD-4A30-B2FE-F8CA6910B2ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C70B4021-B7CD-4A30-B2FE-F8CA6910B2ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C70B4021-B7CD-4A30-B2FE-F8CA6910B2ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C70B4021-B7CD-4A30-B2FE-F8CA6910B2ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

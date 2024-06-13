@@ -12,15 +12,24 @@ namespace Crudoperation.Controllers
     {
         private readonly IProductService _productService;
 
-        public EmployeeController(IProductService productService)
+        public EmployeeController(IProductService productService, ILogger<EmployeeController> @object)
         {
             _productService = productService;
         }
         //[Authorize]
+        //[HttpGet]
+        //public async Task<IEnumerable<Product>> GetProductsAsync()
+        //{
+        //    var res = await _productService.GetProductsAsync();
+        //    return res;
+        //}
+
+        //Get From Hardcoded data
+
         [HttpGet]
-        public async Task<IEnumerable<Product>> GetProductsAsync()
+        public List<Product> GetProductsAsync()
         {
-            var res = await _productService.GetProductsAsync();
+            var res = _productService.GetProductsAsync();
             return res;
         }
         [HttpGet("{id}")]

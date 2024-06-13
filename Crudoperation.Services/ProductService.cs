@@ -11,10 +11,10 @@ namespace Crudoperation.Service
 {
     public class ProductService 
     {
-        public Task<List<Product>> GetProductsAsync()
-        {
-            var products = new HardCodedData();
-            return products.Products();
-        }
+        //public Task<List<Product>> GetProductsAsync()
+        //{
+        //    var products = new HardCodedData();
+        //    return products.Products();
+        //}
     }
 }

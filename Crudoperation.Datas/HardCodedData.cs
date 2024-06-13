@@ -9,7 +9,7 @@ namespace CrudoperationData
 {
     public class HardCodedData
     {
-        public Task<List<Product>> Products()
+        public List<Product> Products()
         {
             var products = new List<Product>();
             products.Add(new Product()
@@ -31,7 +31,8 @@ namespace CrudoperationData
                 description = "afdosfods dsfo donfs "
             });
 
-            return Task.FromResult(products);
+            return products;
+                //Task.FromResult(products);
         }
     }
 }

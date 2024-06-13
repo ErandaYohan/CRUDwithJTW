@@ -1,6 +1,7 @@
 ﻿using Crudoperation.Model.Product;
 using Crudoperation.Models;
 using Crudoperation.Shared;
+using CrudoperationData;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -31,9 +32,16 @@ namespace Crudoperation.Services
             return await _productService.Products.FindAsync(id);
         }
 
-        public async Task<IEnumerable<Product>> GetProductsAsync()
+        //public async Task<IEnumerable<Product>> GetProductsAsync()
+        //{
+        //    return await _productService.Products.ToListAsync();
+        //}
+
+        //Get form Hardcoded data
+        public List<Product> GetProductsAsync()
         {
-            return await _productService.Products.ToListAsync();
+            var hardData = new HardCodedData();
+            return hardData.Products();
         }
 
         public async Task UpdateProductAsync(Product product)
