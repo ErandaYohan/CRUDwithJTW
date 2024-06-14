@@ -29,7 +29,29 @@ namespace Crudoperation.Services
 
         public async Task<Product> GetProduct(int id)
         {
-            return await _productService.Products.FindAsync(id);
+            //return await _productService.Products.FindAsync(id);
+            var hardcoded = new HardCodedData();
+            var result = hardcoded.Products();
+            //var Idvalue = new List<Product>();
+            foreach(var item in result)
+            {
+                if(item.Id == id)
+                {
+                    //Product product = new Product();
+                    //product.Id = item.Id;
+                    //product.title = item.title;
+                    //product.description = item.description;
+                    //Idvalue.Add(product);
+                    return new Product
+                    {
+                        Id = item.Id,
+                        title = item.title,
+                        description = item.description
+                    };  
+                }
+                
+            }
+            return null;
         }
 
         //public async Task<IEnumerable<Product>> GetProductsAsync()
